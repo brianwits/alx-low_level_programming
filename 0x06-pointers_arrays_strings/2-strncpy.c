@@ -23,8 +23,9 @@ char *_strncpy(char *dest, char *src, int n)
 	return (dest);
 }
 
-/* this method in pointer arithmetic
-char *_strncpy(char *dest, char *src, int n)
+/*
+ * this method in pointer arithmetic
+*char *_strncpy(char *dest, char *src, int n)
 {
   int i;
   for (i = 0; i < n && *(src + i); i++)
