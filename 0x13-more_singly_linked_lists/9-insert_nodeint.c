@@ -1,6 +1,7 @@
 #include "lists.h"
 
 /**
+<<<<<<< HEAD
  * insert_nodeint_at_index - insert a new node at a given position
  * @head: pointer to head pointer of linked list
  * @idx: index to insert new node
@@ -50,4 +51,23 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	new_node->next = tmp->next;
 	tmp->next = new_node;
 	return (new_node);
+=======
+ * sum_listint - return sum of all data in linked list
+ * @head: pointer to head pointer of linked list
+ * Return: sum, or 0 if list is empty
+ */
+
+int sum_listint(listint_t *head)
+{
+
+	int sum = 0;
+
+	while (head != NULL)
+	{
+		sum += head->n;
+		head = head->next;
+	}
+
+	return (sum);
+>>>>>>> 0db2df5e1b0da9f88ec183e5c8d2a2d6f8987bd8
 }

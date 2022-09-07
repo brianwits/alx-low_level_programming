@@ -11,7 +11,11 @@
 int main(void)
 {
 	listint_t *head;
+<<<<<<< HEAD
 	listint_t *node;
+=======
+	int n;
+>>>>>>> 0db2df5e1b0da9f88ec183e5c8d2a2d6f8987bd8
 
 	head = NULL;
 	add_nodeint_end(&head, 0);
@@ -23,9 +27,20 @@ int main(void)
 	add_nodeint_end(&head, 402);
 	add_nodeint_end(&head, 1024);
 	print_listint(head);
+<<<<<<< HEAD
 	node = get_nodeint_at_index(head, 5);
 	printf("%d\n", node->n);
 	print_listint(head);
 	free_listint2(&head);
+=======
+	n = pop_listint(&head);
+	printf("- %d\n", n);
+	print_listint(head);
+	n = pop_listint(&head);
+	printf("- %d\n", n);
+	print_listint(head);
+	free_listint2(&head);
+	printf("%p\n", (void *)head);
+>>>>>>> 0db2df5e1b0da9f88ec183e5c8d2a2d6f8987bd8
 	return (0);
 }
